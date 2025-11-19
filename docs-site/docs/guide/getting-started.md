@@ -3,11 +3,11 @@
 Install the library alongside React (when building hooks) or by itself for plain Web Audio usage.
 
 ```bash
-npm install web-audio-piano
+npm install pico-piano
 ```
 
 ```ts
-import Piano from "web-audio-piano";
+import Piano from "pico-piano";
 
 const piano = new Piano({
   attack: 0.01,
@@ -23,7 +23,7 @@ piano.playHz(523.25, { duration: 2, velocity: 0.7 });
 ## React hook
 
 ```tsx
-import { usePiano } from "web-audio-piano";
+import { usePiano } from "pico-piano";
 
 const Keyboard = () => {
   const { play } = usePiano({ sustain: 0.8 });

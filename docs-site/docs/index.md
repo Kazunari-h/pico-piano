@@ -3,7 +3,7 @@
 Lightweight Web Audio toolkit that exposes a `Piano` class, a frequency-aware `playHz` API, and a batteries-included React hook. Use it to scaffold accessible, musical interfaces in a few minutes.
 
 ```ts
-import Piano, { usePiano } from "web-audio-piano";
+import Piano, { usePiano } from "pico-piano";
 
 const piano = new Piano({ attack: 0.02 });
 piano.play("C4", { duration: 1.2 });
@@ -16,5 +16,5 @@ piano.play("C4", { duration: 1.2 });
 
 <div class="actions">
   <a class="vp-button" href="/guide/getting-started">Get started</a>
-  <a class="vp-button secondary" href="https://github.com/Kazunari-h/web-audio-piano">View on GitHub</a>
+  <a class="vp-button secondary" href="https://github.com/Kazunari-h/pico-piano">View on GitHub</a>
 </div>

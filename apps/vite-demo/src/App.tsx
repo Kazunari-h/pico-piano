@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
-import type { ADSR, NoteName, PianoOptions, PlayOptions } from "web-audio-piano";
-import { usePiano } from "web-audio-piano";
+import type { ADSR, NoteName, PianoOptions, PlayOptions } from "pico-piano";
+import { usePiano } from "pico-piano";
 
 const NOTES: NoteName[] = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"];
 const ENVELOPE_FIELDS: (keyof ADSR)[] = ["attack", "decay", "sustain", "release"];

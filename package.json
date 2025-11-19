@@ -31,13 +31,13 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "build:next": "npm run build --workspace web-audio-piano-next-demo",
-    "build:vite": "npm run build --workspace web-audio-piano-vite-demo",
-    "build:docs": "npm run build --workspace web-audio-piano-docs",
+    "build:next": "npm run build --workspace pico-piano-next-demo",
+    "build:vite": "npm run build --workspace pico-piano-vite-demo",
+    "build:docs": "npm run build --workspace pico-piano-docs",
     "build:all": "npm run build && npm run build:next && npm run build:vite && npm run build:docs",
-    "dev:next": "npm run dev --workspace web-audio-piano-next-demo",
-    "dev:vite": "npm run dev --workspace web-audio-piano-vite-demo",
-    "dev:docs": "npm run dev --workspace web-audio-piano-docs"
+    "dev:next": "npm run dev --workspace pico-piano-next-demo",
+    "dev:vite": "npm run dev --workspace pico-piano-vite-demo",
+    "dev:docs": "npm run dev --workspace pico-piano-docs"
   },
   "keywords": [
     "piano",
@@ -54,12 +54,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<your-username>/web-audio-piano.git"
+    "url": "git+https://github.com/<your-username>/pico-piano.git"
   },
   "bugs": {
-    "url": "https://github.com/<your-username>/web-audio-piano/issues"
+    "url": "https://github.com/<your-username>/pico-piano/issues"
   },
-  "homepage": "https://github.com/<your-username>/web-audio-piano#readme",
+  "homepage": "https://github.com/<your-username>/pico-piano#readme",
   "engines": {
     "node": ">=20"
   },

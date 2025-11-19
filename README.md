@@ -21,13 +21,13 @@ Or install directly from the GitHub repository (useful before publishing to npm)
 
 ```bash
 # install latest from the default branch
-npm install github:Kazunari-h/web-audio-piano
+npm install github:Kazunari-h/pico-piano
 
 # or via full git URL
-npm install git+https://github.com/Kazunari-h/web-audio-piano.git
+npm install git+https://github.com/Kazunari-h/pico-piano.git
 
 # install a specific branch, tag or commit
-npm install github:Kazunari-h/web-audio-piano#main
+npm install github:Kazunari-h/pico-piano#main
 ```
 
 Notes:
@@ -35,7 +35,7 @@ Notes:
 - Ensure you use Node.js 20+ as required by the `engines` field.
 
 ```ts
-import Piano from "web-audio-piano";
+import Piano from "pico-piano";
 
 const piano = new Piano({ sustain: 0.7 });
 piano.play("C4", { duration: 1.2 });
@@ -44,7 +44,7 @@ piano.play("C4", { duration: 1.2 });
 ### React hook
 
 ```tsx
-import { usePiano } from "web-audio-piano";
+import { usePiano } from "pico-piano";
 
 const App = () => {
   const { play } = usePiano({ attack: 0.02 });

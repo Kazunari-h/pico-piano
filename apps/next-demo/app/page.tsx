@@ -4,10 +4,10 @@ export default function Page() {
   return (
     <main className="container">
       <header>
-        <h1>Web Audio Piano</h1>
+        <h1>Pico Piano</h1>
         <p>
           This Next.js demo renders a playable piano driven by the{" "}
-          <code>web-audio-piano</code> library and <code>usePiano</code> hook.
+          <code>pico-piano</code> library and <code>usePiano</code> hook.
         </p>
       </header>
       <PianoDemo />

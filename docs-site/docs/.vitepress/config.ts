@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  base: "/web-audio-piano/",
+  base: "/pico-piano/",
   title: "Web Audio Piano",
   description: "TypeScript Web Audio API toolkit + React hook",
   lang: "en-US",
@@ -10,7 +10,7 @@ export default defineConfig({
     nav: [
       { text: "Guide", link: "/guide/getting-started" },
       { text: "API", link: "/#api" },
-      { text: "GitHub", link: "https://github.com/Kazunari-h/web-audio-piano" }
+      { text: "GitHub", link: "https://github.com/Kazunari-h/pico-piano" }
     ],
     sidebar: {
       "/guide/": [
@@ -23,6 +23,6 @@ export default defineConfig({
         }
       ]
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/Kazunari-h/web-audio-piano" }]
+    socialLinks: [{ icon: "github", link: "https://github.com/Kazunari-h/pico-piano" }]
   }
 });

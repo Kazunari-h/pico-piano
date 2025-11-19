@@ -4,7 +4,7 @@
 
 ```tsx
 import { useState } from "react";
-import { usePiano, type PlayOptions } from "web-audio-piano";
+import { usePiano, type PlayOptions } from "pico-piano";
 
 export function Sequencer() {
   const [velocity, setVelocity] = useState(0.8);

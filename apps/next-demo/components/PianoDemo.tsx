@@ -2,8 +2,8 @@
 
 import type { ChangeEvent } from "react";
 import { useCallback, useMemo, useState } from "react";
-import type { NoteName, PianoOptions, PlayOptions } from "web-audio-piano";
-import { usePiano } from "web-audio-piano";
+import type { NoteName, PianoOptions, PlayOptions } from "pico-piano";
+import { usePiano } from "pico-piano";
 
 const NOTE_POOL: NoteName[] = [
   "C3",

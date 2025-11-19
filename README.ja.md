@@ -22,13 +22,13 @@ npm install pico-piano
 
 ```bash
 # デフォルトブランチの最新をインストール
-npm install github:Kazunari-h/web-audio-piano
+npm install github:Kazunari-h/pico-piano
 
 # または HTTPS の Git URL を指定
-npm install git+https://github.com/Kazunari-h/web-audio-piano.git
+npm install git+https://github.com/Kazunari-h/pico-piano.git
 
 # ブランチやタグ、コミットを指定する例
-npm install github:Kazunari-h/web-audio-piano#main
+npm install github:Kazunari-h/pico-piano#main
 ```
 
 注意:
@@ -36,7 +36,7 @@ npm install github:Kazunari-h/web-audio-piano#main
 - `package.json` の `engines` に合わせて Node.js 20 以上を使用してください。
 
 ```ts
-import Piano from "web-audio-piano";
+import Piano from "pico-piano";
 
 const piano = new Piano({ sustain: 0.7 });
 piano.play("C4", { duration: 1.2 });
@@ -45,7 +45,7 @@ piano.play("C4", { duration: 1.2 });
 ### React フックの例
 
 ```tsx
-import { usePiano } from "web-audio-piano";
+import { usePiano } from "pico-piano";
 
 const App = () => {
 	const { play } = usePiano({ attack: 0.02 });
