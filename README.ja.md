@@ -15,7 +15,7 @@ TypeScript を中心に設計された Web Audio ツールキットです。ピ�
 ## インストール
 
 ```bash
-npm install web-audio-piano
+npm install pico-piano
 ```
 
 公開前にリポジトリから直接インストールして試すこともできます:

@@ -14,7 +14,7 @@ TypeScript-first Web Audio toolkit with a piano synth class, ADSR envelope, note
 ## Installation
 
 ```bash
-npm install web-audio-piano
+npm install pico-piano
 ```
 
 Or install directly from the GitHub repository (useful before publishing to npm):
