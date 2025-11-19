@@ -1,64 +1,68 @@
-# web-audio-piano
 
-Web Audio API を利用した小さなピアノライブラリとデモ集です。
+# Web Audio Piano
 
-## 概要
+TypeScript を中心に設計された Web Audio ツールキットです。ピアノ音源クラス、ADSR エンベロープ、ノート名ユーティリティ、及び React 用の `usePiano` フックを提供します。Next.js / Vite のデモと VitePress によるドキュメントサイトを同梱しています。
 
-- ライブラリ: `src/` に TypeScript 実装が含まれます。
-- デモ: `apps/next-demo`（Next.js）と `apps/vite-demo`（Vite + React）があります。
-- ドキュメント: `docs-site/` にドキュメントと VitePress 設定があります。
+## 特徴
 
-## 必要条件
+- `Piano` クラス: `play(note)` / `playHz(frequency)` などのユーティリティを提供
+- ADSR エンベロープとベロシティ制御をサポート
+- ノート名マッピング（`C0` → `B8`）
+- React 向けの `usePiano` フックを提供
+- VitePress ドキュメントサイトを同梱
+- GitHub Actions による CI（ビルド / デプロイ）を用意
 
-- Node.js 20 以上
-
-## クイックスタート
-
-ルートで依存をインストールしてビルドします（CI と同じコマンド群）。
+## インストール
 
 ```bash
-npm install
-npm run build          # ライブラリ全体のビルド
-npm run build:next     # Next.js デモのビルド
-npm run build:vite     # Vite デモのビルド
-npm run build:docs     # ドキュメントサイトのビルド
+npm install web-audio-piano
 ```
 
-ローカルでデモを確認したい場合は、各アプリの `package.json` のスクリプトを確認して実行してください。例えば:
+```ts
+import Piano from "web-audio-piano";
+
+const piano = new Piano({ sustain: 0.7 });
+piano.play("C4", { duration: 1.2 });
+```
+
+### React フックの例
+
+```tsx
+import { usePiano } from "web-audio-piano";
+
+const App = () => {
+	const { play } = usePiano({ attack: 0.02 });
+	return <button onClick={() => play("A4")}>Play A4</button>;
+};
+```
+
+## モノレポ構成（抜粋）
+
+- `src/` – パッケージ本体（公開対象）
+- `apps/next-demo` – Next.js 14 デモ
+- `apps/vite-demo` – Vite + React デモ
+- `docs-site/` – VitePress ドキュメント
+
+ルートの `package.json` にビルド用スクリプトをまとめています（`build` / `build:next` / `build:vite` / `build:docs` など）。
+
+## ドキュメントのローカル確認
 
 ```bash
-cd apps/next-demo
-# スクリプトを確認
-cat package.json | sed -n '1,200p'
-
-cd ../vite-demo
-# スクリプトを確認
-cat package.json | sed -n '1,200p'
+npm run dev:docs
 ```
 
-（各アプリは一般的に `dev` / `start` / `build` スクリプトを持っています。プロジェクト固有の実行方法は該当 `package.json` を参照してください。）
+ビルド出力は `docs-site/docs/.vitepress/dist` を想定しています。
 
-## 開発
+## GitHub Actions（Docs デプロイの注意）
 
-- TypeScript ソースは `src/` にあります。型定義やユーティリティを修正したらルートで再ビルドしてください。
-- VSCode を使う場合、`.vscode` 関連の設定は `.gitignore` で適切に管理されています。
-
-## ディレクトリ構成（抜粋）
-
-- `src/` - ライブラリ本体
-- `apps/next-demo` - Next.js デモ
-- `apps/vite-demo` - Vite + React デモ
-- `docs-site/` - ドキュメントサイト（VitePress など）
-
-## コントリビューション
-
-1. Issue を立てるか、フォークして PR を送ってください。
-2. 変更を加えたらテストとビルドをローカルで確認してください。
+`gh-pages` への自動デプロイは Actions の `GITHUB_TOKEN` の権限に依存します。ワークフローに `permissions: contents: write` と `permissions: pages: write` を設定しておく必要があります。リポジトリ設定で Actions の権限が限定されている場合は、Personal Access Token（書き込み権限）を `secrets.GH_PAGES_PAT` に入れて `github_token: ${{ secrets.GH_PAGES_PAT }}` を使う方法に切り替えてください。
 
 ## ライセンス
 
-（必要であればここにライセンス情報を追加してください）
+MIT License
+
+（このリポジトリは MIT ライセンスで公開されています）
 
 ---
 
-この README は日本語での簡易案内です。英語の README（`README.md`）も併せて参照してください。
+英語版 README（`README.md`）と内容を揃えました。
