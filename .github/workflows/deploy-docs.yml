@@ -25,9 +25,20 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: Show Node / npm versions
+        run: |
+          node -v
+          npm -v
+
+      - name: Verify npm cache
+        run: npm cache verify
+
       - name: Install deps (docs)
         working-directory: ./docs-site
-        run: npm ci
+        run: |
+          # Remove lockfile and node_modules to avoid npm optional-deps bug on runner
+          rm -rf package-lock.json node_modules || true
+          npm install
 
       - name: Build docs
         working-directory: ./docs-site
