@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   base: "/pico-piano/",
-  title: "Web Audio Piano",
+  title: "Pico Piano",
   description: "TypeScript Web Audio API toolkit + React hook",
   lang: "en-US",
   themeConfig: {

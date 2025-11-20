@@ -1,4 +1,4 @@
-# Web Audio Piano
+# Pico Piano
 
 Lightweight Web Audio toolkit that exposes a `Piano` class, a frequency-aware `playHz` API, and a batteries-included React hook. Use it to scaffold accessible, musical interfaces in a few minutes.
 

@@ -1,4 +1,4 @@
-# Web Audio Piano
+# Pico Piano
 
 TypeScript-first Web Audio toolkit with a piano synth class, ADSR envelope, note-name helpers, and a zero-config React hook. This repository also hosts ready-to-run demos built with Next.js and Vite plus a VitePress documentation site.
 

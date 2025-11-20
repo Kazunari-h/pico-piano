@@ -1,5 +1,5 @@
 
-# Web Audio Piano
+# Pico Piano
 
 TypeScript を中心に設計された Web Audio ツールキットです。ピアノ音源クラス、ADSR エンベロープ、ノート名ユーティリティ、及び React 用の `usePiano` フックを提供します。Next.js / Vite のデモと VitePress によるドキュメントサイトを同梱しています。
 
