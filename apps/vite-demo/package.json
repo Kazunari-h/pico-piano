@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "pico-piano": "file:../..",
     "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "pico-piano": "file:../.."
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.8",
@@ -19,5 +19,8 @@
     "@vitejs/plugin-react": "^4.3.1",
     "typescript": "^5.4.2",
     "vite": "^5.4.11"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.53.3"
   }
 }
