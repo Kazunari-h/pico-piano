@@ -34,7 +34,8 @@ jobs:
         run: npm --prefix apps/vite-demo run build
 
       - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v1
+        # use v2 to avoid deprecated upload-artifact v3 dependency
+        uses: actions/upload-pages-artifact@v2
         with:
           path: apps/vite-demo/dist
 
