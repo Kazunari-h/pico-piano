@@ -31,11 +31,9 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "build:next": "npm run build --workspace pico-piano-next-demo",
     "build:vite": "npm run build --workspace pico-piano-vite-demo",
     "build:docs": "npm run build --workspace pico-piano-docs",
-    "build:all": "npm run build && npm run build:next && npm run build:vite && npm run build:docs",
-    "dev:next": "npm run dev --workspace pico-piano-next-demo",
+    "build:all": "npm run build && npm run build:vite && npm run build:docs",
     "dev:vite": "npm run dev --workspace pico-piano-vite-demo",
     "dev:docs": "npm run dev --workspace pico-piano-docs"
   },
