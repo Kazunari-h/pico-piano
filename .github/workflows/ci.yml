@@ -30,28 +30,21 @@ jobs:
 
       - name: Install & Build library (root)
         run: |
-          # ensure devDependencies (types) are installed for TypeScript build
-          npm install --include=dev
+          # use package-lock.json for reproducible installs
+          npm ci --include=dev
           npm run build
 
-      - name: Build Next.js demo (install per-workspace)
+      - name: Build Next.js demo
         working-directory: ./apps/next-demo
         run: |
-          rm -rf package-lock.json node_modules || true
-          # include dev deps for build tools
-          npm install --include=dev || npm install --include=dev
           npm run build
 
-      - name: Build Vite demo (install per-workspace)
+      - name: Build Vite demo
         working-directory: ./apps/vite-demo
         run: |
-          rm -rf package-lock.json node_modules || true
-          npm install --include=dev || npm install --include=dev
           npm run build
 
-      - name: Build docs site (install per-workspace)
+      - name: Build docs site
         working-directory: ./docs-site
         run: |
-          rm -rf package-lock.json node_modules || true
-          npm install --include=dev || npm install --include=dev
           npm run build
