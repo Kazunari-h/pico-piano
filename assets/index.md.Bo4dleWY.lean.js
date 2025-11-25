@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as t,ae as n}from"./chunks/framework.B4SFNw-_.js";const c=JSON.parse('{"title":"Pico Piano","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),e={name:"index.md"};function l(p,i,o,h,k,r){return t(),a("div",null,[...i[0]||(i[0]=[n("",5)])])}const E=s(e,[["render",l]]);export{c as __pageData,E as default};

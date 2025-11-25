@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as t,ae as e}from"./chunks/framework.DZ_JOetx.js";const c=JSON.parse('{"title":"Web Audio Piano","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),n={name:"index.md"};function l(p,i,o,h,d,k){return t(),a("div",null,[...i[0]||(i[0]=[e("",5)])])}const u=s(n,[["render",l]]);export{c as __pageData,u as default};
