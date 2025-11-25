@@ -38,7 +38,9 @@ jobs:
         run: |
           # Remove lockfile and node_modules to avoid npm optional-deps bug on runner
           rm -rf package-lock.json node_modules || true
-          npm install
+          # try to ensure rollup native optional dep for linux x64 is present
+          npm i @rollup/rollup-linux-x64-gnu --no-save || true
+          npm install || npm install
 
       - name: Build docs
         working-directory: ./docs-site

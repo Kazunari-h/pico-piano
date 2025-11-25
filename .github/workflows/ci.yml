@@ -37,19 +37,26 @@ jobs:
         working-directory: ./apps/next-demo
         run: |
           rm -rf package-lock.json node_modules || true
-          npm install
+          # ensure rollup native optional dep for linux x64 is present if needed
+          npm i @rollup/rollup-linux-x64-gnu --no-save || true
+          # run install twice as a fallback for npm optional-deps races
+          npm install || npm install
           npm run build
 
       - name: Build Vite demo (install per-workspace)
         working-directory: ./apps/vite-demo
         run: |
           rm -rf package-lock.json node_modules || true
-          npm install
+          # ensure rollup native optional dep for linux x64 is present if needed
+          npm i @rollup/rollup-linux-x64-gnu --no-save || true
+          npm install || npm install
           npm run build
 
       - name: Build docs site (install per-workspace)
         working-directory: ./docs-site
         run: |
           rm -rf package-lock.json node_modules || true
-          npm install
+          # ensure rollup native optional dep for linux x64 is present if needed
+          npm i @rollup/rollup-linux-x64-gnu --no-save || true
+          npm install || npm install
           npm run build
