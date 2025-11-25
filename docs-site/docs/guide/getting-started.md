@@ -34,7 +34,7 @@ const Keyboard = () => {
 
 ## Demos
 
-- Vite demo (`apps/vite-demo`) — the primary interactive demo (deployed on Vercel).
+- Vite demo (`apps/vite-demo`) — live demo: https://pico-piano-vite-demo.vercel.app/
 
 The demo depends on the local workspace package so you can tinker with UI frameworks before wiring up your own project. To run the demo locally:
 

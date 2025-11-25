@@ -1,7 +1,9 @@
 
 # Pico Piano
 
-TypeScript を中心に設計された Web Audio ツールキットです。ピアノ音源クラス、ADSR エンベロープ、ノート名ユーティリティ、及び React 用の `usePiano` フックを提供します。Next.js / Vite のデモと VitePress によるドキュメントサイトを同梱しています。
+[![ライブデモ](https://img.shields.io/badge/demo-vercel-000000?logo=vercel&style=flat)](https://pico-piano-vite-demo.vercel.app/)
+
+TypeScript を中心に設計された Web Audio ツールキットです。ピアノ音源クラス、ADSR エンベロープ、ノート名ユーティリティ、及び React 用の `usePiano` フックを提供します。Vite のデモ（Vercel にデプロイ）と VitePress によるドキュメントサイトを同梱しています。
 
 ## 特徴
 
@@ -56,7 +58,7 @@ const App = () => {
 ## モノレポ構成（抜粋）
 
 - `src/` – パッケージ本体（公開対象）
-- `apps/vite-demo` – Vite + React デモ（Vercel にデプロイ）
+- `apps/vite-demo` – Vite + React デモ（ライブ: https://pico-piano-vite-demo.vercel.app/）
 - `docs-site/` – VitePress ドキュメント
 
 ルートの `package.json` にビルド用スクリプトをまとめています（`build` / `build:next` / `build:vite` / `build:docs` など）。

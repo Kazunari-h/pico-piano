@@ -1,5 +1,7 @@
 # Pico Piano
 
+[![Live Demo](https://img.shields.io/badge/demo-vercel-000000?logo=vercel&style=flat)](https://pico-piano-vite-demo.vercel.app/)
+
 TypeScript-first Web Audio toolkit with a piano synth class, ADSR envelope, note-name helpers, and a zero-config React hook. This repository also hosts ready-to-run demos built with Next.js and Vite plus a VitePress documentation site.
 
 ## Features
@@ -55,7 +57,7 @@ const App = () => {
 ## Monorepo layout
 
 - `src/` – published library source
-- `apps/vite-demo` – Vite + React demo (deployed on Vercel)
+- `apps/vite-demo` – Vite + React demo (live: https://pico-piano-vite-demo.vercel.app/)
 - `docs-site/` – VitePress documentation
 
 Root `package.json` exposes handy scripts:
