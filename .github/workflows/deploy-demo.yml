@@ -27,10 +27,13 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install demo deps
-        run: npm ci --prefix apps/vite-demo
+      - name: Install dependencies (root)
+        run: |
+          # install all dependencies (including dev) at the repository root so workspace builds can run
+          npm ci --include=dev
 
       - name: Build demo
+        # build the demo using the root-installed node_modules via workspace prefix
         run: npm --prefix apps/vite-demo run build
 
       - name: Upload pages artifact
