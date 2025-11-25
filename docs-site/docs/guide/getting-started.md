@@ -34,7 +34,11 @@ const Keyboard = () => {
 
 ## Demos
 
-- Next.js demo (`apps/next-demo`)
-- Vite demo (`apps/vite-demo`)
+- Vite demo (`apps/vite-demo`) — the primary interactive demo (deployed on Vercel).
 
-Each demo depends on the published package via workspaces so you can tinker with UI frameworks before wiring up your own project.
+The demo depends on the local workspace package so you can tinker with UI frameworks before wiring up your own project. To run the demo locally:
+
+```bash
+npm --prefix apps/vite-demo install
+npm --prefix apps/vite-demo run dev
+```

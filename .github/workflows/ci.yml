@@ -34,11 +34,6 @@ jobs:
           npm ci --include=dev
           npm run build
 
-      - name: Build Next.js demo
-        working-directory: ./apps/next-demo
-        run: |
-          npm run build
-
       - name: Build Vite demo
         working-directory: ./apps/vite-demo
         run: |

@@ -55,8 +55,7 @@ const App = () => {
 ## Monorepo layout
 
 - `src/` – published library source
-- `apps/next-demo` – Next.js 14 demo
-- `apps/vite-demo` – Vite + React demo
+- `apps/vite-demo` – Vite + React demo (deployed on Vercel)
 - `docs-site/` – VitePress documentation
 
 Root `package.json` exposes handy scripts:
@@ -64,7 +63,6 @@ Root `package.json` exposes handy scripts:
 | Command | Description |
 | --- | --- |
 | `npm run build` | Compile the library (emits `dist/`) |
-| `npm run build:next` | Build the Next.js demo |
 | `npm run build:vite` | Build the Vite demo |
 | `npm run build:docs` | Generate the documentation site |
 | `npm run build:all` | Run *all* builds sequentially |

@@ -56,8 +56,7 @@ const App = () => {
 ## モノレポ構成（抜粋）
 
 - `src/` – パッケージ本体（公開対象）
-- `apps/next-demo` – Next.js 14 デモ
-- `apps/vite-demo` – Vite + React デモ
+- `apps/vite-demo` – Vite + React デモ（Vercel にデプロイ）
 - `docs-site/` – VitePress ドキュメント
 
 ルートの `package.json` にビルド用スクリプトをまとめています（`build` / `build:next` / `build:vite` / `build:docs` など）。
