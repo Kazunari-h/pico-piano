@@ -76,6 +76,13 @@ Root `package.json` exposes handy scripts:
 
 `.github/workflows/ci.yml` installs dependencies and runs all build targets on push & pull requests. Keep demos and docs compiling to ensure CI stays green.
 
+Vercel: to avoid triggering Vercel builds when the `gh-pages` branch is pushed, set an Ignored Build Step in your Vercel Project Settings to:
+
+```bash
+npm run vercel:ignore
+```
+
+The repository includes `scripts/vercel-ignore.js` which returns success (causes Vercel to skip the build) when the branch is `gh-pages`.
 ## Docs
 
 The VitePress site lives inside `docs-site/docs`. Start it locally:
