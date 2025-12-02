@@ -34,3 +34,4 @@ If applicable, add screenshots or a short recording to help explain your problem
 
 ## Additional context / 補足
 Add any other context about the problem here. / その他補足情報。
+
