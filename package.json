@@ -1,6 +1,6 @@
 {
   "name": "pico-piano",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight piano sound library using Web Audio API + React Hook (TypeScript).",
   "main": "dist/index.js",
   "module": "dist/index.js",
