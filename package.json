@@ -53,12 +53,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<your-username>/pico-piano.git"
+    "url": "git+https://github.com/Kazunari-h/pico-piano.git"
   },
   "bugs": {
-    "url": "https://github.com/<your-username>/pico-piano/issues"
+    "url": "https://github.com/Kazunari-h/pico-piano/issues"
   },
-  "homepage": "https://github.com/<your-username>/pico-piano#readme",
+  "homepage": "https://github.com/Kazunari-h/pico-piano#readme",
   "engines": {
     "node": ">=20"
   },

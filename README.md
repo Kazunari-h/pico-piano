@@ -35,6 +35,7 @@ npm install github:Kazunari-h/pico-piano#main
 Notes:
 - The package includes a `prepare` script that runs `npm run build` when installing from git, so the `dist/` artifacts are built automatically during installation.
 - Ensure you use Node.js 20+ as required by the `engines` field.
+ - Ensure you use Node.js 20+ as required by the `engines` field. Use a modern npm (npm v9+ bundled with Node 20) for best results.
 
 ```ts
 import Piano from "pico-piano";
@@ -92,3 +93,7 @@ npm run dev:docs
 ```
 
 Deploy the static output from `docs-site/docs/.vitepress/dist`.
+
+## License
+
+License: MIT
